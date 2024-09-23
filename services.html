@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tutorial</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/head.css">
+	<link rel="stylesheet" href="css/_footer.css">
+	<link rel="stylesheet" href="css/_left-bar.css">
+	<link rel="stylesheet" href="css/serv_services.css">
+	<link rel="stylesheet" href="css/modals.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div>
+			<img class="logo" src="/static/black.jpg" alt="Logo">
+		</div>
+		<div>
+			<div class="group">
+				Группа ЭФБО-10-23
+			</div>
+			<div class="name">
+				Бочкарёв Андрей Александрович
+			</div>
+		</div>
+	</header>
+
+	<nav class="navigation">
+		<a href="/main_page.html">Главная</a>
+		<a><strong>Первый семестр</strong></a>
+		<a href="#">Второй семестр</a>
+		<a href="#">Услуги</a>
+		<a href="#">Авторизация</a>
+	</nav>
+
+	<main>
+		<aside class="left-bar">
+			<h2>Содержание</h2>
+			<ul>
+				<li><a href="#">Раздел1</a></li>
+				<li><a href="#">Раздел2</a></li>
+			</ul>
+		</aside>
+
+		<article class="content" style="background-color: white;">
+			<h1>Разработка веб-приложения</h1>
+			<div class="container">
+				<div class="item" data-title="Сайт-визитка">
+					<img src="/static/japan.jpg" alt="Фото 1">
+					<div class="box">
+						<p>Сайт визитка</p>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+
+				<div class="item" data-title="Корпоративный сайт">
+					<img src="/static/japan.jpg" alt="Фото 2">
+					<div class="box">
+						<p>Корпоративный сайт</p>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+
+				<div class="item" data-title="Интернет-магазин">
+					<img src="/static/japan.jpg" alt="Фото 3">
+					<div class="box">
+						<p>Интернет-магазин</p>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+			</div>
+			<section>
+				<h2>Сайт визитка</h2>
+				<p>Представьтесь миру! Сайт-визитка - это ваша виртуальная визитная карточка. На ней можно рассказать о
+					себе, своей компании или предлагаемых услугах.</p>
+				<h2>Корпоративный сайт</h2>
+				<p>Это полноценная виртуальная площадка для вашей компании. Здесь вы можете представить полную
+					информацию о своей деятельности, рассказать о команде, продуктах, партнерах и новостях. Сайт
+					позволит вам создать профессиональный образ и укрепить доверие к вашей компании.</p>
+				<h2>Интернет-магазин</h2>
+				<p>Ваш собственный магазин, который работает 24/7! На сайте-магазине вы сможете разместить товары или
+					услуги с подробными описаниями, фото и ценами. Клиенты смогут легко выбрать и заказать товары
+					онлайн, а вы сможете управлять продажами и отслеживать заказы.</p>
+			</section>
+		</article>
+		<div class="modal" id="modal">
+			<div class="modal-content">
+				<form id="contactForm">
+					<span class="close">&times;</span>
+					<fieldset>
+						<legend id="modal-title" style="font-weight: bold; font-size: 24px;"></legend>
+						<!-- Поле для ввода имени -->
+						<label for="name">Имя: <input type="text" id="name" name="name"
+								pattern="[a-zА-Яа-яA-Z0-9\ ]{4,}" required></label>
+
+						<!-- Поле для ввода электронной почты -->
+						<label for="email">Электронная почта: <input type="email" id="email" name="email"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required></label>
+
+						<!-- Поле для ввода номера телеофна -->
+						<label for="tel">Номер телефона: <input type="tel" id="tel" name="tel" required></label>
+
+						<label for="Country">Ваша страна:
+							<select id="Country" name="Country">
+								<option value="">(select one)</option>
+								<option value="1">Russsian</option>
+								<option value="2">USA</option>
+								<option value="3">Japan</option>
+								<option value="4">Other</option>
+							</select>
+						</label>
+
+						<label for="dates">Дата:
+							<input class="dates" id="dates" type="date" required name="dates" />
+						</label>
+						<!-- Многострочное текстовое поле для комментариев -->
+						<label for="comments">Комментарии: <textarea id="comments" name="comments"></textarea></label>
+
+						<label for="terms-and-conditions">
+							<input class="inline" id="terms-and-conditions" type="checkbox" required
+								name="terms-and-conditions" />Согласен на обработку моих
+							персональных данных
+						</label>
+
+
+						<!-- Кнопка отправки формы -->
+						<button type="submit" class="button-submit">Отправить</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<div class="footer-content">
+			<div class="footer-name">Бочкарёв Андрей Александрович
+			</div>
+			<div class="social-icons">
+				<a href="#" target="_blank"><img class="fab ftelegramm" src="/static/Telegramm.png" width="30"
+						height="30`"></img></a>
+				<a href="#" target="_blank"><i class="fab whatssap"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="/scripts/modal.js"></script>
+</body>
+
+</html>

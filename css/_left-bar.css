@@ -1,0 +1,29 @@
+.left-bar {
+    padding:20px;
+    width: 200px;
+    min-height: 100vh;
+    top: 80px;
+    color:#333;
+    background-color:white;
+    border-right: solid #636363;
+  }
+  
+  .left-bar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-bar li {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+  .left-bar a{
+    text-decoration: none;
+    color:#333;
+  }
+  
+  .left-bar a:hover {
+    font-weight: bold;
+  }
+  

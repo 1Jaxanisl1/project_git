@@ -1,0 +1,41 @@
+footer {
+  width: auto;
+  height: 80px;
+  border-top: solid #636363;
+  background-color: white;
+  font-size: 19px;
+  color: #333;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto; /* Разделяем на две колонки */
+  gap: 20px;
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 0 20px;
+}
+
+.footer-name {
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #333;
+}
