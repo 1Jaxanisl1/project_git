@@ -1,0 +1,32 @@
+#container_map {
+    display: flex;
+}
+
+#map {
+    width: 80%;
+    height: 500px;   
+}
+
+.pdf_section{
+    width: 40%;
+    padding: 20px;
+    border: 1px dashed #ccc;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 400px;
+}
+
+#drop-zone {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  #drop-zone.dragover {
+    border-color: #00a000;
+    background-color: #e0ffe0;
+  }
